@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Poubeau - Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/img/rook.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo"><img src="assets/img/photo.png" alt="Jordan Poubeau" class="nav-avatar"></a>
+            <div class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#tech">Technologies</a>
+                <a href="#experience">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="lang-toggle">
+                    <a href="index.html" class="lang-btn">FR</a>
+                    <span class="lang-sep">|</span>
+                    <a href="en.html" class="lang-btn lang-active">EN</a>
+                </div>
+                <button class="theme-slider" id="themeToggle" aria-label="Toggle theme">
+                    <span class="slider-track"><span class="slider-thumb"></span></span>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#tech">Technologies</a>
+        <a href="#experience">Education</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <video class="hero-video" autoplay muted loop playsinline><source src="assets/video/hero-bg.mp4" type="video/mp4"></video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-tag reveal">Cybersecurity &amp; Networks</p>
+            <h1 class="hero-title reveal">
+                <span class="hero-line">Jordan</span>
+                <span class="hero-line">Poubeau.</span>
+            </h1>
+            <p class="hero-sub reveal">Engineering student at EFREI, Networks &amp; Security major.</p>
+            <div class="hero-cta reveal">
+                <a href="#projects" class="btn btn-primary">View projects <span class="btn-arrow">&#8594;</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-label reveal">Projects</div>
+            <h2 class="section-title reveal">Recent projects.</h2>
+            <div class="projects-grid">
+
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-img"><img src="assets/img/sql-injection.png" alt="SQL Injection" loading="lazy"></div>
+                    <div class="project-body">
+                        <div class="project-tag">Cybersecurity</div>
+                        <h3>SQL Injection - Hardening</h3>
+                        <p>SQL injection exploitation and remediation. Parameterized queries, bypass testing, PostgreSQL database.</p>
+                        <div class="project-tech"><span>Python</span><span>PostgreSQL</span><span>SQL</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-img"><img src="assets/img/pfsense.png" alt="pfSense" loading="lazy"></div>
+                    <div class="project-body">
+                        <div class="project-tag">Network</div>
+                        <h3>Firewall pfSense + Snort IDS</h3>
+                        <p>pfSense deployment on VirtualBox, WAN/LAN configuration, Snort integration for intrusion detection.</p>
+                        <div class="project-tech"><span>pfSense</span><span>Snort</span><span>FreeBSD</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-img"><img src="assets/img/devsecops-pipeline.png" alt="DevSecOps" loading="lazy"></div>
+                    <div class="project-body">
+                        <div class="project-tag">Security</div>
+                        <h3>TPRM - Defense in Depth</h3>
+                        <p>DevSecOps pipeline (SAST, DAST, Trivy), EBIOS RM matrix, continuous hardening, third-party risk management.</p>
+                        <div class="project-tech"><span>TPRM</span><span>OWASP ZAP</span><span>Jenkins</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-img"><img src="assets/img/crypto-rsa.png" alt="Crypto RSA" loading="lazy"></div>
+                    <div class="project-body">
+                        <div class="project-tag">Cryptography</div>
+                        <h3>RSA Encryption</h3>
+                        <p>RSA implementation in Python, key generation, encryption/decryption, frequency analysis attack.</p>
+                        <div class="project-tech"><span>Python</span><span>RSA</span><span>Crypto</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-img"><img src="assets/img/matrice-risques.png" alt="EBIOS Matrix" loading="lazy"></div>
+                    <div class="project-body">
+                        <div class="project-tag">GRC</div>
+                        <h3>EBIOS RM Matrix</h3>
+                        <p>Risk criticality matrix (impact/likelihood), scenario classification, treatment plan.</p>
+                        <div class="project-tech"><span>EBIOS RM</span><span>ISO 27005</span><span>GRC</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tilt>
+                    <div class="project-img"><img src="assets/img/pki-ssl.png" alt="PKI SSL" loading="lazy"></div>
+                    <div class="project-body">
+                        <div class="project-tag">PKI</div>
+                        <h3>SSL Certificates - PKI</h3>
+                        <p>Certificate authority, CSR generation with OpenSSL, Apache SSL configuration, chain of trust.</p>
+                        <div class="project-tech"><span>OpenSSL</span><span>Apache</span><span>X.509</span></div>
+                    </div>
+                </article>
+
+                <a href="https://github.com/xJobo/lockpick" target="_blank" class="project-card reveal" data-tilt>
+                    <div class="project-img"><img src="assets/img/lockpick.svg" alt="Lockpick" loading="lazy"></div>
+                    <div class="project-body">
+                        <div class="project-tag">Cybersecurity</div>
+                        <h3>Lockpick - Password Strength Checker</h3>
+                        <p>CLI tool to analyze password strength: brute force estimation, RockYou blacklist, scoring and recommendations.</p>
+                        <div class="project-tech"><span>Python</span><span>Regex</span><span>Hashcat</span></div>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=i679F45X14U" target="_blank" class="project-card reveal" data-tilt>
+                    <div class="project-img"><img src="assets/img/cyber-video.jpg" alt="Cybersecurity video" loading="lazy"></div>
+                    <div class="project-body">
+                        <div class="project-tag">Awareness</div>
+                        <h3>Awareness video, 3rd prize</h3>
+                        <p>Password security awareness video, produced as a team at Universit&eacute; Sorbonne Paris Nord. Awarded 3rd prize out of 45 groups.</p>
+                        <div class="project-tech"><span>Cybersecurity</span><span>Video editing</span><span>Awareness</span></div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section-alt" id="about">
+        <div class="container">
+            <div class="section-label reveal">About</div>
+            <div class="about-layout">
+                <div class="about-main">
+                    <h2 class="section-title reveal">Finding what's broken where everything seems to work.</h2>
+                    <p class="about-desc reveal">In 2017, WannaCry paralyzed hospitals and businesses worldwide. I was eleven, and one question struck me: how can such critical systems be so vulnerable? That question never left me.</p>
+                    <p class="about-desc reveal">What drives me in cybersecurity is the rigor it demands. Finding a vulnerability isn't about luck — it's a methodology, a way of thinking. Pentest labs with Kali Linux and Metasploit, CTFs on TryHackMe, Cisco certifications alongside my studies.</p>
+                    <p class="about-desc reveal">Currently pursuing an engineering degree at EFREI, majoring in Networks &amp; Security, I keep pushing forward: offensive security, networking, and hands-on practice.</p>
+                </div>
+                <div class="about-side">
+                    <div class="terminal-wrap reveal">
+                        <div class="terminal">
+                            <div class="terminal-bar"><span class="tdot red"></span><span class="tdot yellow"></span><span class="tdot green"></span><span class="terminal-title">kali@jordan:~</span></div>
+                            <div class="terminal-body" id="terminalBody"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech -->
+    <section class="section" id="tech">
+        <div class="container">
+            <div class="section-label reveal">Stack</div>
+            <h2 class="section-title reveal">Technologies I use.</h2>
+            <div class="tech-grid reveal">
+                <!-- system -->
+                <div class="tech-icon" data-color="#333" data-tip="Linux"><i class="devicon-linux-plain"></i></div>
+                <div class="tech-icon" data-color="#4EAA25" data-tip="Bash"><i class="devicon-bash-plain"></i></div>
+                <div class="tech-icon" data-color="#3776AB" data-tip="Python"><i class="devicon-python-plain"></i></div>
+                <!-- security -->
+                <div class="tech-icon" data-color="#00BCD4" data-tip="Nmap"><svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 3v18"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 4 6 4 9s-1.5 6.5-4 9"/><path d="M12 3c-2.5 2.5-4 6-4 9s1.5 6.5 4 9"/></svg></div>
+                <div class="tech-icon" data-color="#1A96FF" data-tip="Wireshark"><svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M4 12c1.5-3 3.5-4 5-1s3 3 5 0 3.5-2 5.5 1"/></svg></div>
+                <div class="tech-icon" data-color="#2596CD" data-tip="Metasploit"><svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/><path d="M12 22V12"/><path d="M2 7l10 5 10-5"/></svg></div>
+                <div class="tech-icon" data-color="#00A86B" data-tip="Nessus"><svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+                <!-- infra -->
+                <div class="tech-icon" data-color="#183A61" data-tip="VirtualBox"><svg viewBox="0 0 24 24" width="40" height="40"><path fill="currentColor" d="M12 1L3 5.5v13L12 23l9-4.5v-13L12 1zm0 2.2l6.5 3.3L12 9.8 5.5 6.5 12 3.2zM5 8.1l6 3v9.7l-6-3V8.1zm8 12.7V11.1l6-3v9.7l-6 3z"/></svg></div>
+                <div class="tech-icon" data-color="#4CAF50" data-tip="Marionnet"><svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h6M16 8h6M9 8l3 3 3-3"/><rect x="8" y="5" width="8" height="6" rx="1"/><path d="M4 8v0a2 2 0 01-2-2V6"/><path d="M20 8v0a2 2 0 002-2V6"/><path d="M12 14v4"/><rect x="8" y="18" width="8" height="3" rx="1"/></svg></div>
+                <!-- dev -->
+                <div class="tech-icon" data-color="#00618A" data-tip="MySQL"><i class="devicon-mysql-plain"></i></div>
+                <div class="tech-icon" data-color="#777BB4" data-tip="PHP"><i class="devicon-php-plain"></i></div>
+                <div class="tech-icon" data-color="#F34F29" data-tip="Git"><i class="devicon-git-plain"></i></div>
+                <!-- web -->
+                <div class="tech-icon" data-color="#F0DB4F" data-tip="JavaScript"><i class="devicon-javascript-plain"></i></div>
+                <div class="tech-icon" data-color="#E44D26" data-tip="HTML5"><i class="devicon-html5-plain"></i></div>
+                <div class="tech-icon" data-color="#264DE4" data-tip="CSS3"><i class="devicon-css3-plain"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section section-alt" id="certifications">
+        <div class="container">
+            <div class="section-label reveal">Certifications</div>
+            <h2 class="section-title reveal">Cisco Certifications.</h2>
+            <div class="certs-grid reveal">
+                <a href="https://www.credly.com/badges/c718885f-9098-41a9-ae6d-440f6962fcaf/linked_in_profile" target="_blank" class="cert-card" data-tilt>
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h4>Introduction to Cybersecurity</h4>
+                    <span class="cert-date">March 2026</span>
+                </a>
+                <a href="https://www.credly.com/badges/7f1e9117-1419-4771-afbf-4217f460bb9b/linked_in_profile" target="_blank" class="cert-card" data-tilt>
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h4>Networking Basics</h4>
+                    <span class="cert-date">March 2026</span>
+                </a>
+                <a href="https://www.credly.com/badges/9e7cc984-5008-4821-8b94-6ab1c07595ae/linked_in_profile" target="_blank" class="cert-card" data-tilt>
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+                    </div>
+                    <h4>Industrial Networking Essentials</h4>
+                    <span class="cert-date">March 2026</span>
+                </a>
+                <a href="https://www.credly.com/badges/231decd6-14a8-46c4-a26d-51f2bd43f79a/linked_in_profile" target="_blank" class="cert-card" data-tilt>
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                    </div>
+                    <h4>Digital Safety and Security Awareness</h4>
+                    <span class="cert-date">March 2026</span>
+                </a>
+                <a href="https://www.credly.com/badges/4445e36e-16c1-4804-8cd7-8287d91c380e/linked_in_profile" target="_blank" class="cert-card" data-tilt>
+                    <div class="cert-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <h4>Network Technician Career Path</h4>
+                    <span class="cert-date">March 2026</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-label reveal">Education</div>
+            <h2 class="section-title reveal">Education.</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026 - present</span>
+                        <h3>EFREI Engineering School</h3>
+                        <p>Networks &amp; Security major, work-study program</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - 2026</span>
+                        <h3>B.Tech in Networks &amp; Telecommunications</h3>
+                        <p>Cybersecurity track, Universit&eacute; Sorbonne Paris Nord (IUT Villetaneuse)</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Baccalaur&eacute;at STI2D - Lyc&eacute;e Fresnel</h3>
+                        <p>With honors, SIN option (Information Systems &amp; Digital) / Math-Physics</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Ongoing</span>
+                        <h3>Self-taught</h3>
+                        <p>Root-Me, TryHackMe: pentesting, CTF, vulnerability exploitation, forensics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="contact-block">
+                <div class="section-label reveal">Contact</div>
+                <h2 class="section-title contact-title reveal">Ping.</h2>
+                <p class="contact-sub reveal">Open to opportunities: internship, work-study, technical projects. Let's talk.</p>
+                <div class="contact-links reveal">
+                    <a href="mailto:poubeaujordan@gmail.com" class="btn btn-primary btn-lg">
+                        poubeaujordan@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/jordan-poubeau" target="_blank" class="btn btn-ghost btn-lg" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://github.com/xJobo" target="_blank" class="btn btn-ghost btn-lg" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                    <a href="assets/POUBEAU_Jordan_resume_US.pdf" target="_blank" class="btn btn-ghost btn-lg">
+                        My Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jordan Poubeau</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

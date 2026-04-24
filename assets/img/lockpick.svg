@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400">
+  <rect width="720" height="400" fill="#0c0c0c"/>
+  <rect x="60" y="40" width="600" height="320" rx="12" fill="#161616" stroke="#333" stroke-width="1"/>
+  <circle cx="90" cy="68" r="6" fill="#ff5f56"/>
+  <circle cx="110" cy="68" r="6" fill="#ffbd2e"/>
+  <circle cx="130" cy="68" r="6" fill="#27c93f"/>
+  <text x="170" y="72" fill="#666" font-family="monospace" font-size="13">lockpick</text>
+  <line x1="60" y1="88" x2="660" y2="88" stroke="#333" stroke-width="1"/>
+  <text x="80" y="120" fill="#00ff41" font-family="monospace" font-size="14">$ python lockpick.py</text>
+  <text x="80" y="150" fill="#ccc" font-family="monospace" font-size="14">Lockpick — testeur de robustesse</text>
+  <text x="80" y="185" fill="#00ff41" font-family="monospace" font-size="14">Mot de passe à tester : azerty</text>
+  <text x="80" y="220" fill="#ff5f56" font-family="monospace" font-size="14">[!] ALERTE : mot de passe trop courant</text>
+  <text x="80" y="255" fill="#888" font-family="monospace" font-size="14">[Longueur]    Trop court (6 car.)</text>
+  <text x="80" y="285" fill="#888" font-family="monospace" font-size="14">[Temps crack] moins d'une seconde</text>
+  <text x="80" y="320" fill="#ffbd2e" font-family="monospace" font-size="14">[Score]       1/7 — FAIBLE</text>
+</svg>
